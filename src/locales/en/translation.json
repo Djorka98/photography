@@ -1,0 +1,16 @@
+{
+    "webDesign": "web design",
+    "mailDesign": "mail: photography@gmail.com",
+    "aboutTitle": "About Us",
+    "aboutDesc": "In <b>PHOTOGRAPHY</b>, we believe that every photograph tells a story. Whether it's the grandeur of nature, fleeting moments of everyday life, or the intricate details of human expression, photography is our way of preserving memories and emotions in a single frame.<br></br>Founded by passionate photographers, we have spent years perfecting the art of capturing the world from unique perspectives. Our approach combines technical expertise with a deep appreciation for the aesthetics of composition, light, and detail. We are dedicated to using modern equipment and innovative techniques to create images that resonate with our viewers on a personal level.<br></br>Whether you're looking for breathtaking landscapes, portraits that reveal the soul, or product photography that elevates your brand, we're here to deliver exceptional quality in every shot. Join us on this journey as we continue to explore the beauty and complexity of the world through the lens.<br></br><b>Let's create something beautiful together.</b>",
+    "photoTitle": "Photos",
+    "contactTitle": "Contact",
+    "contactName": "Full name",
+    "contactPhone": "Phone number",
+    "contactMail": "Email",
+    "contactMessage": "Message",
+    "contactSubmit": "Send",
+    "popupText": "Message sent successfully!",
+    "footerText": "All rights reserved."
+}
+  
