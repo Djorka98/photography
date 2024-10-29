@@ -1,8 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  body {
+  body, html {
     margin: 0;
+    padding: 0;
     font-family: 'JetBrains Mono', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -28,5 +29,9 @@ export const GlobalStyle = createGlobalStyle`
 
   input[type=number] {
     -moz-appearance: textfield;
+  }
+
+  .App {
+    overflow-x: hidden;
   }
 `;

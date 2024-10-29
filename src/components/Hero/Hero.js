@@ -38,6 +38,7 @@ import {
 export const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  const imageRef = useRef(null);
   const [showContent, setshowContent] = useState(false);
   const [blurAmount, setBlurAmount] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
@@ -45,11 +46,9 @@ export const Hero = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { t, i18n } = useTranslation();
-  const imageRef = useRef(null); 
 
   const handleImageClick = () => {
-    setIsExpanded(true);
-    setIsHovered(false);
+    setIsExpanded((prev) => !prev);
   };
 
   const handleAnimationComplete = () => {
@@ -150,6 +149,16 @@ export const Hero = () => {
     i18n.changeLanguage(lng);
   };
 
+  const getResponsiveHeight = () => {
+    if (window.innerWidth <= 768) {
+      return '300px';
+    } else if (window.innerWidth <= 1024) {
+      return '500px';
+    } else {
+      return '900px';
+    }
+  };
+
   return (
     <>
       <HeroContainer style={{ height: isExpanded ? "auto" : "100vh" }}>
@@ -205,46 +214,35 @@ export const Hero = () => {
         </HeroTextContainer>
 
         <HeroImageContainer>
-          <HeroImage
-            ref={imageRef}
-            src={`${process.env.PUBLIC_URL}/images/HeroImage.jpg`}
-            alt="Camera"
-            initial={{ opacity: 0 }}
-            onHoverStart={() => !isExpanded && setIsHovered(true)}
-            onHoverEnd={() => setIsHovered(false)}
-            onClick={handleImageClick}
-            animate={{
-              scale: isHovered ? 1.03 : 1,
-              opacity: 1,
-              width: isExpanded ? "100%" : "100%",
-              maxWidth: isExpanded ? "100%" : "600px",
-              height: isExpanded
-                ? window.innerWidth <= 768
-                  ? "300px"
-                  : window.innerWidth <= 1024
-                  ? "500px"
-                  : "900px"
-                : "300px",
-              maxHeight: isExpanded
-                ? window.innerWidth <= 768
-                  ? "300px"
-                  : window.innerWidth <= 1024
-                  ? "500px"
-                  : "900px"
-                : "300px",
-            }}
-            transition={{
-              duration: 0.5,
-              ease: "easeInOut",
-              scale: { duration: 0.1 },
-            }}
-            onAnimationComplete={handleAnimationComplete}
-            style={{
-              cursor: isExpanded ? "default" : "pointer",
-              margin: "0 auto",
-              filter: `blur(${blurAmount}px)`,
-            }}
-          />
+        <HeroImage
+          ref={imageRef}
+          src={`${process.env.PUBLIC_URL}/images/HeroImage.jpg`}
+          alt="Camera"
+          initial={{ opacity: 0 }}
+          onHoverStart={() => !isExpanded && setIsHovered(true)}
+          onHoverEnd={() => setIsHovered(false)}
+          onClick={handleImageClick}
+          animate={{
+            scale: isHovered ? 1.03 : 1,
+            opacity: 1,
+            width: isExpanded ? '100%' : '80%', // Ajuste a 80% en móviles cuando no está expandido
+            maxWidth: isExpanded ? '100%' : '600px',
+            height: isExpanded ? getResponsiveHeight() : '300px',
+            maxHeight: isExpanded ? getResponsiveHeight() : '300px',
+          }}
+          transition={{
+            width: { duration: 1, ease: 'easeInOut' },
+            height: { duration: 1, ease: 'easeInOut' },
+            opacity: { duration: 0.5 },
+            scale: { duration: 0.1 },
+          }}
+          onAnimationComplete={handleAnimationComplete}
+          style={{
+            cursor: isExpanded ? "default" : "pointer",
+            margin: "0 auto",
+            filter: `blur(${blurAmount}px)`,
+          }}
+        />
         </HeroImageContainer>
 
         {showContent && (

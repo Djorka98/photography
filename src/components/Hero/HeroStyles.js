@@ -26,23 +26,24 @@ export const HeroImageContainer = styled.div`
 `;
 
 export const HeroImage = styled(motion.img)`
-  width: 100%;
-  max-width: 600px; 
-  transition: all 2s ease;
-  cursor: pointer;
+  transition: all 0.5s ease;
+
+  @media only screen and (max-width: 600px) {
+    max-width: 80%; // Ajuste a 80% en pantallas móviles pequeñas cuando no está expandido
+  }
 
   @media only screen and (max-width: 768px) {
-    max-width: 100%;
+    max-width: ${({ isExpanded }) => (isExpanded ? '100%' : '80%')};
     height: auto;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    max-width: 80%;
+    max-width: ${({ isExpanded }) => (isExpanded ? '100%' : '80%')};
     height: auto;
   }
 
   @media only screen and (min-width: 1025px) {
-    max-width: 600px;
+    max-width: ${({ isExpanded }) => (isExpanded ? '100%' : '600px')};
     height: auto;
   }
 `;
@@ -67,6 +68,14 @@ export const HeroSpan = styled(motion.span)`
 
 export const HeroText = styled(motion.h1)`
   margin: 2rem 0;
+
+  @media(max-width: 768px) {
+    font-size: 4rem;
+  }
+
+  @media(max-width: 450px) {
+    font-size: 3rem;
+  }
 `;
 
 // ? Header Style
@@ -141,6 +150,27 @@ export const AboutContent = styled.div`
 
     p {
       padding: 0;  
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      width: 400px;
+      height: 450px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    img {
+      width: 300px;
+      height: 350px;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    img {
+      width: 200px;
+      height: 250px;
     }
   }
 `;
@@ -324,6 +354,11 @@ export const FloatingButtonContainer = styled(motion.div)`
   flex-direction: column;
   gap: 10px;
   z-index: 1000;
+
+  @media(max-width: 500px) {
+    bottom: 15px;
+    right: 15px;
+  }
 `;
 
 export const FloatingButton = styled.button`

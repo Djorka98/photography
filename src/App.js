@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { GlobalStyle } from './appStyles';
 import { LoadingBar } from './components/LoadingBar/LoadingBar';
 import { Hero } from './components/Hero/Hero';
 
@@ -35,15 +36,18 @@ function App() {
   }, [loadingComplete]);
 
   return (
-    <div className="App">
-      {!hideLoadingBar && (
-        <LoadingBar 
+    <>
+      <GlobalStyle />
+      <div className="App">
+        {!hideLoadingBar && (
+          <LoadingBar 
           onProgress={handleProgress} 
           loadingComplete={loadingComplete} 
-        />
-      )}
-      {showHero && <Hero />}
-    </div>
+          />
+        )}
+        {showHero && <Hero />}
+      </div>
+    </>
   );
 }
 
