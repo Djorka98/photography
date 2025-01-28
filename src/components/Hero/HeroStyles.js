@@ -324,9 +324,9 @@ export const Footer = styled.footer`
 // ? Popup Style
 export const Popup = styled.div`
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 20px;
+  bottom: 110px;
+  right: 10px;
+  padding: 5px 20px;
   background-color: #4caf50;
   color: white;
   border-radius: 8px;

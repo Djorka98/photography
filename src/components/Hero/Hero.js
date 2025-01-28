@@ -98,20 +98,20 @@ export const Hero = () => {
           ? JSON.parse(response.data)
           : response.data;
 
-      if (Array.isArray(photosData)) {
-        const formattedPhotos = photosData.map((photo) => ({
-          ...photo,
-          src: `${process.env.PUBLIC_URL}${photo.src}`,
-        }));
+    if (photosData && Array.isArray(photosData.photos)) {
+      const formattedPhotos = photosData.photos.map((photo) => ({
+        ...photo,
+        src: `${process.env.PUBLIC_URL}${photo.src}`,
+      }));
 
-        setPhotos(formattedPhotos);
-      } else {
-        console.error(
-          "La respuesta no es un array después de la conversión:",
-          photosData
-        );
-        setError("Unexpected data format from API.");
-      }
+      setPhotos(formattedPhotos);
+    } else {
+      console.error(
+        "La respuesta no es un array después de la conversión:",
+        photosData
+      );
+      setError("Unexpected data format from API.");
+    }
 
       setLoading(false);
     } catch (error) {
