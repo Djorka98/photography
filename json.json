@@ -1,0 +1,175 @@
+// INGLES
+[
+    {
+        "title": "Black & White Peaks",
+        "description": "A dramatic black and white mountain landscape full of timeless emotion.",
+        "src": "/images/AboutImage.jpg",
+        "alt": "Black and white mountains",
+        "caption": "Timeless strength"
+    },
+    {
+        "title": "Vintage Camera Shot",
+        "description": "A close-up of a retro camera capturing the soul of photography.",
+        "src": "/images/HeroImage.jpg",
+        "alt": "Classic camera front view",
+        "caption": "Focus on the art"
+    },
+    {
+        "title": "Mountain Serenity",
+        "description": "A breathtaking view of a mountain range bathed in golden sunlight.",
+        "src": "/images/Photo1.jpg",
+        "alt": "Mountain landscape with golden sunlight",
+        "caption": "Golden hour in the mountains"
+    },
+    {
+        "title": "Tranquil Sunset",
+        "description": "A peaceful lake reflecting the warm hues of a stunning sunset.",
+        "src": "/images/Photo2.jpg",
+        "alt": "Sunset over a calm lake",
+        "caption": "Reflections of the sun"
+    },
+    {
+        "title": "Forest Glow",
+        "description": "Sunlight filtering through the dense forest, creating a magical atmosphere.",
+        "src": "/images/Photo3.jpg",
+        "alt": "Sunlit forest with warm tones",
+        "caption": "Nature's warm embrace"
+    },
+    {
+        "title": "Urban Sunset",
+        "description": "A city skyline illuminated by the vibrant colors of dusk.",
+        "src": "/images/Photo4.jpg",
+        "alt": "City skyline at sunset",
+        "caption": "Metropolitan twilight"
+    },
+    {
+        "title": "Golden Meadows",
+        "description": "Rolling hills covered in golden grass under a clear blue sky.",
+        "src": "/images/Photo5.jpg",
+        "alt": "Golden grass fields with blue sky",
+        "caption": "Nature's open canvas"
+    },
+    {
+        "title": "Majestic Peaks",
+        "description": "Towering mountains rising dramatically against the sky.",
+        "src": "/images/Photo6.jpg",
+        "alt": "Snow-capped mountains at dawn",
+        "caption": "The call of the peaks"
+    },
+    {
+        "title": "Coastal Sunset",
+        "description": "A mesmerizing sunset over the shoreline, waves gently touching the sand.",
+        "src": "/images/Photo7.jpg",
+        "alt": "Beach sunset with golden waves",
+        "caption": "Serenity by the sea"
+    },
+    {
+        "title": "Moonlit Beach",
+        "description": "A quiet night at the beach under the gentle glow of the moon.",
+        "src": "/images/Photo8.jpg",
+        "alt": "Night beach under moonlight",
+        "caption": "Whispers of the tide"
+    },
+    {
+        "title": "Neon Metropolis",
+        "description": "A futuristic city glowing under vibrant lights and endless energy.",
+        "src": "/images/Photo9.jpg",
+        "alt": "Colorful futuristic city",
+        "caption": "Urban dreams"
+    },
+    {
+        "title": "Skyline Sunrise",
+        "description": "A golden sunrise lighting up a modern city skyline.",
+        "src": "/images/Photo10.jpg",
+        "alt": "Skyscrapers at sunrise",
+        "caption": "New day rising"
+    },
+    {
+        "title": "Mystic Forest",
+        "description": "A dense forest with tall trees casting long shadows at dawn.",
+        "src": "/images/Photo11.jpg",
+        "alt": "Dark forest with morning light",
+        "caption": "Nature's cathedral"
+    },
+    {
+        "title": "Golden Desert Dunes",
+        "description": "Soft sand dunes glowing under the setting sun’s warm light.",
+        "src": "/images/Photo12.jpg",
+        "alt": "Desert at sunset",
+        "caption": "Waves of sand and light"
+    }
+]
+
+// ESPAÑOL
+[
+    {
+        "title": "Cumbres en Blanco y Negro",
+        "description": "Un paisaje montañoso en blanco y negro que transmite emoción, fuerza y atemporalidad.",
+        "image": "/images/AboutImage.jpg"
+    },
+    {
+        "title": "Fotografía Clásica",
+        "description": "Una cámara retro en primer plano, capturando la esencia del arte fotográfico.",
+        "image": "/images/HeroImage.jpg"
+    },
+    {
+        "title": "Serenidad Montañosa",
+        "description": "Una vista impresionante de montañas bañadas por la luz dorada del atardecer.",
+        "image": "/images/Photo1.jpg"
+    },
+    {
+        "title": "Atardecer Tranquilo",
+        "description": "Un lago en calma que refleja los cálidos tonos de un atardecer espectacular.",
+        "image": "/images/Photo2.jpg"
+    },
+    {
+        "title": "Bosque Dorado",
+        "description": "La luz solar atraviesa el bosque denso, creando una atmósfera mágica.",
+        "image": "/images/Photo3.jpg"
+    },
+    {
+        "title": "Atardecer Urbano",
+        "description": "Una ciudad moderna iluminada por los vibrantes colores del crepúsculo.",
+        "image": "/images/Photo4.jpg"
+    },
+    {
+        "title": "Praderas Doradas",
+        "description": "Colinas cubiertas de pasto dorado bajo un cielo azul despejado.",
+        "image": "/images/Photo5.jpg"
+    },
+    {
+        "title": "Cumbres Majestuosas",
+        "description": "Montañas imponentes que se alzan dramáticamente bajo el cielo.",
+        "image": "/images/Photo6.jpg"
+    },
+    {
+        "title": "Atardecer Costero",
+        "description": "Un atardecer hipnotizante sobre la costa, con olas suaves tocando la arena.",
+        "image": "/images/Photo7.jpg"
+    },
+    {
+        "title": "Playa a la Luz de la Luna",
+        "description": "Una noche tranquila en la playa iluminada por la suave luz de la luna.",
+        "image": "/images/Photo8.jpg"
+    },
+    {
+        "title": "Metrópoli de Neón",
+        "description": "Una ciudad futurista que brilla con luces vibrantes y energía sin fin.",
+        "image": "/images/Photo9.jpg"
+    },
+    {
+        "title": "Amanecer sobre la Ciudad",
+        "description": "El sol naciente baña de oro los rascacielos de una ciudad moderna.",
+        "image": "/images/Photo10.jpg"
+    },
+    {
+        "title": "Bosque Místico",
+        "description": "Un bosque denso con árboles altos y sombras profundas al amanecer.",
+        "image": "/images/Photo11.jpg"
+    },
+    {
+        "title": "Dunas Doradas del Desierto",
+        "description": "Dunas suaves que brillan bajo la cálida luz del sol poniente.",
+        "image": "/images/Photo12.jpg"
+    }
+]  
