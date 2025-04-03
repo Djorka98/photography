@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-// ? Main container
 export const MainContainer = styled.div`
   height: 100vh;
   background-color: white;
@@ -13,7 +12,6 @@ export const MainContainer = styled.div`
   z-index: 2; /* Set a higher z-index so LoadingBar is on top */
 `;
 
-// ? Loading bar container
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -27,14 +25,12 @@ export const Container = styled.div`
   left: 0;
 `;
 
-// ? Progress text
 export const ProgressText = styled(motion.div)`
   font-size: 1.5rem;
   color: white;
   margin-bottom: 1rem;
 `;
 
-// ? Bar container
 export const BarContainer = styled.div`
   width: 80%;
   height: 10px;
@@ -43,13 +39,11 @@ export const BarContainer = styled.div`
   overflow: hidden;
 `;
 
-// ? Progress bar
 export const ProgressBar = styled(motion.div)`
   height: 100%;
   background-color: white;
 `;
 
-// ? Curtain for loading complete animation
 export const Curtain = styled(motion.div)`
   position: absolute;
   top: 0;

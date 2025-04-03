@@ -34,7 +34,6 @@ import {
   FloatingButton,
 } from "./HeroStyles";
 
-// Fotos
 const photosEN = [
   {
     title: "Mountain Serenity",
@@ -267,7 +266,7 @@ export const Hero = () => {
   
       const formattedPhotos = selectedPhotos.map((photo) => ({
         ...photo,
-        src: `${process.env.PUBLIC_URL}${photo.src}`, // Esto solo si usas imágenes en /public
+        src: `${process.env.PUBLIC_URL}${photo.src}`,
       }));
   
       setPhotos(formattedPhotos);
@@ -384,7 +383,7 @@ export const Hero = () => {
           animate={{
             scale: isHovered ? 1.03 : 1,
             opacity: 1,
-            width: isExpanded ? '100%' : '80%', // Ajuste a 80% en móviles cuando no está expandido
+            width: isExpanded ? '100%' : '80%',
             maxWidth: isExpanded ? '100%' : '600px',
             height: isExpanded ? getResponsiveHeight() : '300px',
             maxHeight: isExpanded ? getResponsiveHeight() : '300px',

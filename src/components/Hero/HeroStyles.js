@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-// ? Main Style
 export const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,7 +28,7 @@ export const HeroImage = styled(motion.img)`
   transition: all 0.5s ease;
 
   @media only screen and (max-width: 600px) {
-    max-width: 80%; // Ajuste a 80% en pantallas móviles pequeñas cuando no está expandido
+    max-width: 80%;
   }
 
   @media only screen and (max-width: 768px) {
@@ -78,7 +77,6 @@ export const HeroText = styled(motion.h1)`
   }
 `;
 
-// ? Header Style
 export const Header = styled(motion.header)`
   width: 100%;
   padding: 1rem 2rem;
@@ -105,7 +103,6 @@ export const NavUl = styled.ul`
   margin: 0;
 `;
 
-// ? About Style
 export const AboutSection = styled.div`
   width: 100%;
   padding: 2rem 1rem 1rem;
@@ -175,7 +172,6 @@ export const AboutContent = styled.div`
   }
 `;
 
-// ? Photo Style
 export const PhotoSection = styled.div`
   width: 100%;
   padding: 1rem;
@@ -250,7 +246,6 @@ export const assignImageHeight = (index) => {
   return `${heights[index % heights.length]}px`;
 };
 
-// ? Contact Style
 export const ContactSection = styled.div`
   width: 100%;
   padding: 1rem;
@@ -313,7 +308,6 @@ export const ContactForm = styled(motion.form)`
   }
 `;
 
-// ? Footer Style
 export const Footer = styled.footer`
   width: 100%;
   padding: 1rem;
@@ -321,7 +315,6 @@ export const Footer = styled.footer`
   text-align: center;
 `;
 
-// ? Popup Style
 export const Popup = styled.div`
   position: fixed;
   bottom: 110px;
@@ -345,7 +338,6 @@ export const CloseButton = styled.button`
   cursor: pointer;
 `;
 
-// ? Floating Button Language
 export const FloatingButtonContainer = styled(motion.div)`
   position: fixed;
   bottom: 10px;
