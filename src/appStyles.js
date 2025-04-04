@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    font-family: 'JetBrains Mono', monospace; /* Add your custom font */
+    font-family: 'JetBrains Mono', monospace;
   }
 
   input::-webkit-outer-spin-button,

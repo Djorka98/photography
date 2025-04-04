@@ -53,7 +53,6 @@ export const HeroSpanContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  /* Responsive adjustments */
   @media only screen and (max-width: 1024px) {
     flex-direction: column;
     gap: 1rem;
@@ -137,7 +136,6 @@ export const AboutContent = styled.div`
     border-radius: 50%;
   }
 
-  /* Responsive adjustments */
   @media only screen and (max-width: 1024px) {
     flex-direction: column;
 
@@ -185,10 +183,9 @@ export const GalleryHeading = styled(motion.h2)`
 export const Gallery = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  column-count: 4; /* Adjust this value for the number of columns */
-  column-gap: 15px; /* Space between columns */
+  column-count: 4;
+  column-gap: 15px;
 
-  /* Responsive adjustments */
   @media only screen and (max-width: 768px) {
     column-count: 1;
   }

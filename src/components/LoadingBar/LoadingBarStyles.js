@@ -9,7 +9,7 @@ export const MainContainer = styled.div`
   align-items: center;
   overflow: hidden;
   position: relative;
-  z-index: 2; /* Set a higher z-index so LoadingBar is on top */
+  z-index: 2;
 `;
 
 export const Container = styled.div`
@@ -51,7 +51,7 @@ export const Curtain = styled(motion.div)`
   width: 100%;
   height: 100vh;
   background-color: #4a4a4a;
-  z-index: 3; /* The curtain will be on top of everything */
+  z-index: 3;
 `;
 
 export const CurtainContainer = styled.div`
